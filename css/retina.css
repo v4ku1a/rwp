@@ -1,0 +1,38 @@
+@media 	only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (-webkit-min-device-pixel-ratio: 1.5),
+		only screen and (-moz-min-device-pixel-ratio: 1.5),
+		only screen and (-o-min-device-pixel-ratio: 3/2),
+		only screen and (-o-min-device-pixel-ratio: 2/1),
+		only screan and (min--moz-device-pixel-ratio: 1.5),
+		only screen and (min-device-pixel-ratio: 1.5),
+		only screen and (min-device-pixel-ratio: 2) {
+
+		.header-logo {
+			background-image: url(/img/icons/logo@2x.png);
+		}
+
+		.search-form__submit {
+			background-image: url(/img/icons/search@2x.png);
+		}
+
+		.modal-container:target .modal-main__close {
+			background-image: url(/img/icons/close@2x.png);
+		}
+
+		@media (max-width: 715px) {
+			.header-logo {
+				background-image: url(/img/icons/Logo_mobile@2x.png);
+			}
+			.search-toggler-button {
+				background-image: url(/img/icons/search_mobile@2x.png);
+			}
+			
+			.menu-toggler-button {
+				background-image: url(/img/icons/burger_menu@2x.png);
+			}
+			.menu-button-ghost:checked ~ .menu-toggler-button {
+				background-image: url(/img/icons/close@2x.png);
+			}
+		}
+
+	}

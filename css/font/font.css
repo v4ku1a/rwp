@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'helveticaneuecyrlight';
+    src: url('helveticaneuecyr-light-webfont.eot');
+    src: url('helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('helveticaneuecyr-light-webfont.woff2') format('woff2'),
+         url('helveticaneuecyr-light-webfont.woff') format('woff'),
+         url('helveticaneuecyr-light-webfont.ttf') format('truetype'),
+         url('helveticaneuecyr-light-webfont.svg#helveticaneuecyrlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

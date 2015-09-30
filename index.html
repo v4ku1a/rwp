@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IT News Hub</title>
+        <meta name="description" content="Responsive page with news feed. The page contains several functional components: Search form; News grid.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font/font.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/tablet.css" media="(max-width: 1270px)">
+        <link rel="stylesheet" href="css/mobile.css" media="(max-width: 715px)">
+        <link rel="stylesheet" href="css/color.css">
+        <link rel="stylesheet" href="css/retina.css">
+        <link rel="stylesheet" href="css/helper.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <header class="header">
+        	<div class="width-limiter">
+        		<div class="header__block logo-container">
+        			<h1 class="header-logo">IT News Hub</h1>
+        		</div>
+        		<div class="header__block form-container">
+        			<input type="checkbox" id="search-toggler" class="search-button-ghost">
+        			<label for="search-toggler" class="search-toggler-button disable-select"> </label>     			
+        			<form class="search-form">        			
+        				<input class="search-form__input" type="text" placeholder="Search">
+        				<input class="search-form__submit" type="submit" value="">
+        			</form>
+        		</div>
+        		<nav class="header__block menu-container">
+        			<input type="checkbox" class="menu-button-ghost" id="menu-toggler" >
+        			<label for="menu-toggler" class="menu-toggler-button disable-select"> </label>
+        			<label for="menu-toggler" class="menu-toggler-bg disable-select"> </label>
+        			<ul class="header-menu">
+        				<li><a class="header-menu__menu-item" href="#">ABOUT</a></li>
+        				<li><a class="header-menu__menu-item" href="#">NEWS HUB</a></li>
+        				<li><a class="header-menu__menu-item" href="#">CONTACTS</a></li>
+        			</ul>        			
+        		</nav>        		
+        	</div>
+        </header>
+
+
+        <main>
+        	<div class="width-limiter">
+        		<section class="cards-container justify-blocks">
+
+
+
+        		</section>
+        	</div>
+        </main>
+
+
+        <footer class="footer">
+        	<div class="width-limiter justify-blocks">
+        		<div class="module-social">
+        			<h5>SOCIAL ACTIVITY</h5>
+        			<div class="module__content">
+	        			<a href="#" class="icon-sa icon-sa-twitter"></a>
+	        			<a href="#" class="icon-sa icon-sa-pinterest"></a>
+	        			<a href="#" class="icon-sa icon-sa-youtube"></a>
+	        			<a href="#" class="icon-sa icon-sa-facebook"></a>
+	        			<a href="#" class="icon-sa icon-sa-googleplus"></a>
+	        			<a href="#" class="icon-sa icon-sa-instagram"></a>
+        			</div>
+        		</div>
+        		<div class="module-helpful-links">
+        			<h5 class="module__header">HELPFUL LINKS</h5>
+        			<div class="module__content">
+	        			<p><a href="#" class="">Cras quis nulla com</a></p>
+	        			<p><a href="#" class="">Vestibulum rutrum</a></p>
+	        			<p><a href="#" class="">Lorem ipsum dolor</a></p>
+	        			<p><a href="#" class="">Nam dapibus nisl vi</a></p>
+	        			<p><a href="#" class="">Vestibulum rutrum</a></p>
+        			</div>
+        		</div>
+        		<div class="module-success-stories">
+        			<h5 class="module__header">SUCCESS STEPS</h5>
+        			<div class="module__content">
+	        			<p>1. Kogi Cosbt sweater.</p>
+	        			<p>2. Retro occupy org.</p>
+	        			<p>3. Keytar McSweeney.</p>
+	        			<p>4. Keytar McSweeney`s.</p>
+	        			<p>5. Keytar McSweeney.</p>
+        			</div>
+        		</div>
+        		<div class="module-contacts">
+        			<h5 class="module__header">CONTACTS</h5>
+        			<div class="module__content">
+	        			<p><span class="icon-sa-location"></span> Glendalle, Ohio</p>
+	        			<p><a href="mailto:juan.kelly@example.com">juan.kelly@example.com</a></p>
+	        			<p>(508)-639-54-88</p>
+	        			<p>(103)-409-41-07</p>
+	        			<p>Juan Kelly</p>
+        			</div>
+        		</div>
+        	</div>
+        </footer>
+
+
+        <script id="cardTemplate" type="text/x-jsrender">
+
+        	<a href="#modal-{{:_id}}" class="cards-container__card" >
+        		<div class="card__img-holder" style="background-image: url({{:imgPickedByFunction}});"></div>     		
+        		<div class="card__txt-holder">
+        			<h3>{{:headline.print_headline || headline.main || headline.name}}</h3>
+        		</div>
+        	</a>
+
+        	<div id="modal-{{:_id}}" class="modal-container">
+        		<a href="#close" class="modal-container__background"></a>
+        		<div class="modal-main">
+        			<div class="modal-main__header">
+        				<a href="#close" class="modal-main__close"> </a>
+        			</div>
+        			<h2 class="modal-main__title">{{:headline.print_headline || headline.main || headline.name}}</h2>
+        			<div class="modal-main__content">
+		        		<div class="modal-main__img-holder" style="background-image: url({{:imgPickedByFunction}});"></div>
+		        		<p class="modal-main__text">{{:lead_paragraph}}</p>     		
+        			</div>
+        		</div>
+        	</div>
+
+
+        </script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/request.js"></script>
+        <script src="js/interface.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

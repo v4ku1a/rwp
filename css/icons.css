@@ -1,0 +1,130 @@
+.icon-sa{
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 36px 36px;
+}
+
+@media (min-width: 700px){
+
+	.icon-sa-twitter {
+		background-image: url(/img/icon-sa/Twitter.png);
+	}
+	.icon-sa-pinterest {
+		background-image: url(/img/icon-sa/Pinterest.png);
+	}
+	.icon-sa-youtube {
+		background-image: url(/img/icon-sa/YouTube.png);
+	}
+	.icon-sa-facebook {
+		background-image: url(/img/icon-sa/Facebook.png);
+	}
+	.icon-sa-googleplus {
+		background-image: url(/img/icon-sa/Google.png);
+	}
+	.icon-sa-instagram {
+		background-image: url(/img/icon-sa/Instagram.png);
+	}
+	.icon-sa-location {
+		background-image: url(/img/icon-sa/location_contacts.png);
+	}
+
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 2),
+			only screen and (-webkit-min-device-pixel-ratio: 1.5),
+			only screen and (-moz-min-device-pixel-ratio: 1.5),
+			only screen and (-o-min-device-pixel-ratio: 3/2),
+			only screen and (-o-min-device-pixel-ratio: 2/1),
+			only screan and (min--moz-device-pixel-ratio: 1.5),
+			only screen and (min-device-pixel-ratio: 1.5),
+			only screen and (min-device-pixel-ratio: 2) {
+	
+		.icon-sa-twitter {
+			background-image: url(/img/icon-sa/Twitter@2x.png);
+		}
+		.icon-sa-pinterest {
+			background-image: url(/img/icon-sa/Pinterest@2x.png);
+		}
+		.icon-sa-youtube {
+			background-image: url(/img/icon-sa/YouTube@2x.png);
+		}
+		.icon-sa-facebook {
+			background-image: url(/img/icon-sa/Facebook@2x.png);
+		}
+		.icon-sa-googleplus {
+			background-image: url(/img/icon-sa/Google@2x.png);
+		}
+		.icon-sa-instagram {
+			background-image: url(/img/icon-sa/Instagram@2x.png);
+		}
+		.icon-sa-location {
+			background-image: url(/img/icon-sa/location_contacts@2x.png);
+		}
+
+	}
+
+}
+
+
+@media (max-width: 699px){
+
+	.icon-sa-twitter {
+		background-image: url(/img/icon-sa/Twitter_Color.png);
+	}
+	.icon-sa-pinterest {
+		background-image: url(/img/icon-sa/Pinterest_Color.png);
+	}
+	.icon-sa-youtube {
+		background-image: url(/img/icon-sa/YouTube_Color.png);
+	}
+	.icon-sa-facebook {
+		background-image: url(/img/icon-sa/Facebook_Color.png);
+	}
+	.icon-sa-googleplus {
+		background-image: url(/img/icon-sa/Google_Color.png);
+	}
+	.icon-sa-instagram {
+		background-image: url(/img/icon-sa/Instagram_Color.png);
+	}
+	.icon-sa-location {
+		background-image: url(/img/icon-sa/location_contacts@2x.png);
+	}
+
+
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 2),
+			only screen and (-webkit-min-device-pixel-ratio: 1.5),
+			only screen and (-moz-min-device-pixel-ratio: 1.5),
+			only screen and (-o-min-device-pixel-ratio: 3/2),
+			only screen and (-o-min-device-pixel-ratio: 2/1),
+			only screan and (min--moz-device-pixel-ratio: 1.5),
+			only screen and (min-device-pixel-ratio: 1.5),
+			only screen and (min-device-pixel-ratio: 2) {
+	
+		.icon-sa-twitter {
+			background-image: url(/img/icon-sa/Twitter_Color@2x.png);
+		}
+		.icon-sa-pinterest {
+			background-image: url(/img/icon-sa/Pinterest_Color@2x.png);
+		}
+		.icon-sa-youtube {
+			background-image: url(/img/icon-sa/YouTube_Color@2x.png);
+		}
+		.icon-sa-facebook {
+			background-image: url(/img/icon-sa/Facebook_Color@2x.png);
+		}
+		.icon-sa-googleplus {
+			background-image: url(/img/icon-sa/Google_Color@2x.png);
+		}
+		.icon-sa-instagram {
+			background-image: url(/img/icon-sa/Instagram_Color@2x.png);
+		}
+		.icon-sa-location {
+			background-image: url(/img/icon-sa/location_contacts@2x.png);
+		}
+		
+	}
+
+}
